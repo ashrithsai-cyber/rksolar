@@ -142,7 +142,7 @@ const Index = () => {
       <section id="home" className="relative overflow-hidden bg-[url('/background.jpg')] bg-cover bg-center pt-20">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
-          <div className="max-w-4xl ml-4">
+          <div className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
               POWER YOUR FUTURE WITH{" "}
               <TypewriterText />
@@ -556,8 +556,6 @@ const Index = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
             </Carousel>
           </div>
         </div>

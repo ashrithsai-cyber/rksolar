@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           {/* Company Info - Takes more space */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-6 md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2.5 bg-gradient-to-br from-primary/10 to-yellow-500/10 rounded-xl border border-primary/20 shadow-sm">
                 <Sun className="w-7 h-7 text-primary" />
@@ -25,9 +25,10 @@ const Footer = () => {
                 <p className="text-xs text-slate-500 font-semibold">Powering a Sustainable Future</p>
               </div>
             </div>
-            
-           
-            
+
+
+
+
             <div className="space-y-3.5 pt-2">
               <div className="flex items-start gap-3 text-slate-600 hover:text-primary transition-colors group">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary/70 group-hover:text-primary" />
@@ -44,55 +45,58 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="lg:col-span-2 space-y-5">
-            <h4 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-6">
-              Quick Links
-            </h4>
-            <ul className="space-y-3">
-              {[
-                { to: "/", label: "Home" },
-                { to: "/about-us", label: "About Us" },
-                { to: "/services", label: "Services" },
-                { to: "/projects", label: "Projects" },
-                { to: "/gallery", label: "Gallery" },
-              ].map((link) => (
-                <li key={link.to}>
-                  <Link 
-                    to={link.to} 
-                    className="text-slate-600 hover:text-primary font-medium text-sm transition-all duration-200 inline-flex items-center gap-2 group"
-                  >
-                    <span className="w-0 h-px bg-primary group-hover:w-3 transition-all duration-200"></span>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Quick Links and Policies - Side by side on mobile */}
+          <div className="grid grid-cols-2 gap-8 lg:col-span-4 lg:grid-cols-2">
+            {/* Quick Links */}
+            <div className="space-y-5">
+              <h4 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-6">
+                Quick Links
+              </h4>
+              <ul className="space-y-3">
+                {[
+                  { to: "/", label: "Home" },
+                  { to: "/about-us", label: "About Us" },
+                  { to: "/services", label: "Services" },
+                  { to: "/projects", label: "Projects" },
+                  { to: "/gallery", label: "Gallery" },
+                ].map((link) => (
+                  <li key={link.to}>
+                    <Link
+                      to={link.to}
+                      className="text-slate-600 hover:text-primary font-medium text-sm transition-all duration-200 inline-flex items-center gap-2 group"
+                    >
+                      <span className="w-0 h-px bg-primary group-hover:w-3 transition-all duration-200"></span>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Policies */}
-          <div className="lg:col-span-2 space-y-5">
-            <h4 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-6">
-              Policies
-            </h4>
-            <ul className="space-y-3">
-              {[
-                "Privacy Policy",
-                "Terms of Service",
-                "Warranty Policy",
-                "Refund Policy",
-              ].map((policy) => (
-                <li key={policy}>
-                  <a 
-                    href="#" 
-                    className="text-slate-600 hover:text-primary font-medium text-sm transition-all duration-200 inline-flex items-center gap-2 group"
-                  >
-                    <span className="w-0 h-px bg-primary group-hover:w-3 transition-all duration-200"></span>
-                    {policy}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/* Policies */}
+            <div className="space-y-5">
+              <h4 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-6">
+                Policies
+              </h4>
+              <ul className="space-y-3">
+                {[
+                  "Privacy Policy",
+                  "Terms of Service",
+                  "Warranty Policy",
+                  "Refund Policy",
+                ].map((policy) => (
+                  <li key={policy}>
+                    <a
+                      href="#"
+                      className="text-slate-600 hover:text-primary font-medium text-sm transition-all duration-200 inline-flex items-center gap-2 group"
+                    >
+                      <span className="w-0 h-px bg-primary group-hover:w-3 transition-all duration-200"></span>
+                      {policy}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Social Media */}
@@ -102,7 +106,7 @@ const Footer = () => {
             </h4>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/rkgreenmountenergies"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-white hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50 rounded-xl border border-slate-200 hover:border-pink-300 transition-all duration-300 hover:shadow-md hover:shadow-pink-100"
@@ -113,7 +117,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://wa.me/919000272748"
+                href="https://wa.me/919347920454"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-white hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50 rounded-xl border border-slate-200 hover:border-green-300 transition-all duration-300 hover:shadow-md hover:shadow-green-100"
@@ -124,7 +128,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/rkgreenmountenergies"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-white hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50 rounded-xl border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md hover:shadow-blue-100"
@@ -156,11 +160,16 @@ const Footer = () => {
           <p className="text-sm text-slate-500 font-medium text-center md:text-left">
             © 2024 RK Solar Green Mount. All rights reserved.
           </p>
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-black rounded-full border border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-sm">
+          <a
+            href="https://wa.me/918341126169?text=Hello%2C%20I%20am%20interested%20in%20your%20website%20for%20our%20company."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-black rounded-full border border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-sm"
+          >
             <span className="text-xs font-semibold text-white">
               Developed by M. Ashrith Sai
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </footer>

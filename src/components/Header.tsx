@@ -22,8 +22,8 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-md border-b">
-      <nav className="pr-4">
+    <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md border-b">
+      <nav className="px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
@@ -66,8 +66,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center gap-2">
-            <Button size="sm" className="font-bold">CONTACT US</Button>
+          <div className="lg:hidden flex items-center">
             <Button
               variant="ghost"
               size="sm"
@@ -113,6 +112,15 @@ const Header = () => {
                   </Link>
                 )
               ))}
+              <Button
+                className="font-bold mx-4 mt-2"
+                onClick={() => {
+                  handleContactUs();
+                  setIsMenuOpen(false);
+                }}
+              >
+                CONTACT US
+              </Button>
             </div>
           </div>
         )}
