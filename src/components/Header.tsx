@@ -40,7 +40,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to="/"
-                  className="text-sm font-bold text-white hover:text-primary transition-colors"
+                  className="text-sm font-bold text-white hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {item.name}
                 </Link>
@@ -48,7 +48,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-bold text-white hover:text-primary transition-colors"
+                  className="text-sm font-bold text-white hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {item.name}
                 </a>
@@ -87,7 +87,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to="/"
-                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2"
+                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -96,7 +96,7 @@ const Header = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2"
+                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -105,7 +105,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2"
+                    className="text-sm font-bold text-white hover:text-primary transition-colors px-4 py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}

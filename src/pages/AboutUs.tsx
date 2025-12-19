@@ -45,38 +45,39 @@ const AboutUs = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-28 pb-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="relative pt-28 pb-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-                  ABOUT RK SOLAR GREEN MOUNT
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <img
+                  src="/aboutus.jpg"
+                  alt="About Us - RK Green Mount"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="order-1 md:order-2 text-center md:text-left">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+                  ABOUT RK GREEN MOUNT
                 </h1>
-                <p className="text-xl font-semibold text-muted-foreground mb-8">
+                <p className="text-lg font-medium text-gray-700 mb-8 leading-relaxed">
                   Pioneering sustainable solar energy solutions across India, empowering communities with clean, renewable power for a brighter future.
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2">
-                    <Sun className="h-6 w-6 text-primary" />
-                    <span className="font-semibold">{count}+ Industrial Experience</span>
+
+                <div className="flex flex-wrap justify-center md:justify-start gap-6">
+                  <div className="flex items-center gap-3 bg-gray-100 rounded-lg px-6 py-3 hover:bg-gray-200 transition-colors">
+                    <Sun className="h-6 w-6 text-yellow-500" />
+                    <span className="font-semibold text-gray-900">{count}+ Years Experience</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-6 w-6 text-primary" />
-                    <span className="font-semibold">15K+ Installations</span>
+                  <div className="flex items-center gap-3 bg-gray-100 rounded-lg px-6 py-3 hover:bg-gray-200 transition-colors">
+                    <Users className="h-6 w-6 text-blue-500" />
+                    <span className="font-semibold text-gray-900">15K+ Installations</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Award className="h-6 w-6 text-primary" />
-                    <span className="font-semibold">98% Satisfaction</span>
+                  <div className="flex items-center gap-3 bg-gray-100 rounded-lg px-6 py-3 hover:bg-gray-200 transition-colors">
+                    <Award className="h-6 w-6 text-green-500" />
+                    <span className="font-semibold text-gray-900">98% Satisfaction</span>
                   </div>
                 </div>
-              </div>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&h=400&fit=crop"
-                  alt="Solar panels installation"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg"
-                />
               </div>
             </div>
           </div>
@@ -84,16 +85,18 @@ const AboutUs = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
               Our Mission & Vision
             </h2>
             <div className="text-center">
-              <p className="text-muted-foreground font-semibold text-lg leading-relaxed max-w-4xl mx-auto text-justify">
-                At RK Solar Green Mount, we are driven by a powerful purpose to make clean, reliable, and affordable solar energy accessible to every home, business, and community across India. Our mission is to help people save on electricity, reduce carbon impact, and move toward energy independence through high-quality solar solutions and hassle-free installation. We envision a greener, self-sustaining India, where every rooftop becomes a source of clean power and every citizen plays a part in protecting our planet. Through innovation, trust, and excellence, we aim to become one of the nation's most trusted solar energy providers transforming sunlight into savings, sustainability, and a brighter tomorrow.
-              </p>
+              <div className="bg-gray-50 rounded-lg p-8 shadow-sm border">
+                <p className="text-gray-700 font-medium text-lg leading-relaxed max-w-4xl mx-auto text-justify">
+                  At RK Solar Green Mount, we are driven by a powerful purpose to make clean, reliable, and affordable solar energy accessible to every home, business, and community across India. Our mission is to help people save on electricity, reduce carbon impact, and move toward energy independence through high-quality solar solutions and hassle-free installation. We envision a greener, self-sustaining India, where every rooftop becomes a source of clean power and every citizen plays a part in protecting our planet. Through innovation, trust, and excellence, we aim to become one of the nation's most trusted solar energy providers transforming sunlight into savings, sustainability, and a brighter tomorrow.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -102,37 +105,37 @@ const AboutUs = () => {
 
 
       {/* Team Photos Section */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
               Meet Our Team
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
                 <img
                   src="/pro1.jpg"
                   alt="Team member 1"
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">THUM SHYAM PRASAD</h3>
-                  <p className="text-primary font-semibold mb-2">Founder</p>
-                  <p className="text-muted-foreground text-sm">
-                    Thum Shyam Prasad  Founder, ECE, with 13+ years of industrial experience in engineering, system integration, and solar implementation.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">THUM SHYAM PRASAD</h3>
+                  <p className="text-blue-600 font-semibold mb-2">Founder</p>
+                  <p className="text-gray-600 text-sm">
+                    Thum Shyam Prasad Founder, ECE, with 13+ years of industrial experience in engineering, system integration, and solar implementation.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
                 <img
                   src="/pro2.jpg"
                   alt="Team member 2"
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">K.RAMESH GOUD</h3>
-                  <p className="text-primary font-semibold mb-2">Founder</p>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">K.RAMESH GOUD</h3>
+                  <p className="text-blue-600 font-semibold mb-2">Founder</p>
+                  <p className="text-gray-600 text-sm">
                     K. Ramesh Goud Founder, EEE, with 12+ years of industrial experience in electrical engineering, power systems, and solar project execution.
                   </p>
                 </CardContent>
@@ -239,62 +242,74 @@ const AboutUs = () => {
       </section>
 
       {/* Certifications & Contact Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-4xl md:text-5xl font-black mb-8">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
                   Certifications & Recognition
                 </h2>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 p-4 bg-primary/10 rounded-lg">
-                    <Award className="h-8 w-8 text-primary" />
+                <div className="space-y-6">
+                  <div className="flex items-center gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">
+                      🏆
+                    </div>
                     <div>
-                      <h3 className="font-bold">MNRE Certified</h3>
-                      <p className="text-muted-foreground text-sm">Ministry of New and Renewable Energy approved</p>
+                      <h3 className="font-bold text-lg text-gray-900">MNRE Certified</h3>
+                      <p className="text-gray-600 text-sm">Ministry of New and Renewable Energy approved</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 p-4 bg-secondary/10 rounded-lg">
-                    <Award className="h-8 w-8 text-secondary" />
+                  <div className="flex items-center gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">
+                      🏢
+                    </div>
                     <div>
-                      <h3 className="font-bold">Udyam Registered</h3>
-                      <p className="text-muted-foreground text-sm">MSME recognized enterprise</p>
+                      <h3 className="font-bold text-lg text-gray-900">Udyam Registered</h3>
+                      <p className="text-gray-600 text-sm">MSME recognized enterprise</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 p-4 bg-accent/10 rounded-lg">
-                    <Award className="h-8 w-8 text-accent" />
+                  <div className="flex items-center gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-2xl">
+                      ✅
+                    </div>
                     <div>
-                      <h3 className="font-bold">MSME Approved</h3>
-                      <p className="text-muted-foreground text-sm">MSME Certified</p>
+                      <h3 className="font-bold text-lg text-gray-900">MSME Approved</h3>
+                      <p className="text-gray-600 text-sm">MSME Certified</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <h2 className="text-4xl md:text-5xl font-black mb-8">
+                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
                   Get In Touch
                 </h2>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mt-1">📞</div>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-2xl">
+                      📞
+                    </div>
                     <div>
-                      <h3 className="font-bold">Phone</h3>
-                      <p className="text-muted-foreground">+91 90002 72748, +91 93479 20454</p>
+                      <h3 className="font-bold text-lg text-gray-900">Phone</h3>
+                      <p className="text-gray-600">+91 90002 72748, +91 93479 20454</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mt-1">✉️</div>
+                  <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl">
+                      ✉️
+                    </div>
                     <div>
-                      <h3 className="font-bold">Email</h3>
-                      <p className="text-muted-foreground">rkgreenmountenergies@gmail.com</p>
+                      <h3 className="font-bold text-lg text-gray-900">Email</h3>
+                      <p className="text-gray-600">rkgreenmountenergies@gmail.com</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mt-1">📍</div>
+                  <div className="flex items-start gap-6 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center text-red-600 text-2xl">
+                      📍
+                    </div>
                     <div>
-                      <h3 className="font-bold">Address</h3>
-                      <p className="text-muted-foreground">5-6-51/23/1, High Tension Line Rd, Venkat Rao Nagar, Kukatpally, Hyderabad, Telangana 500072</p>
+                      <h3 className="font-bold text-lg text-gray-900">Address</h3>
+                      <p className="text-gray-600">5-6-51/23/1, High Tension Line Rd, Venkat Rao Nagar, Kukatpally, Hyderabad, Telangana 500072</p>
                     </div>
                   </div>
                 </div>

@@ -78,35 +78,35 @@ const Index = () => {
       id: 1,
       photo: "/p1.jpeg",
       feedback: "RK Solar Green Mount handled everything from site inspection to installation smoothly. My electricity bill dropped by almost 70% in just the first two months. Very professional team!",
-      name: "Ramesh Varma",
-      company: ""
+      name: "Parvathi Reddy",
+      company: "Cedar Valley International School"
     },
     {
       id: 2,
       photo: "/p2.jpeg",
       feedback: "I really appreciated how clearly they explained every part of the process. The installation was neat, quick, and the team was polite. Definitely recommending them to others.",
-      name: "Priya Choudhary",
-      company: ""
+      name: "Kavitha Madam",
+      company: "Aparna Western Meadows"
     },
     {
       id: 3,
       photo: "/p3.jpeg",
       feedback: "Excellent service and top-quality solar panels. Their after-sales support is amazing — they check performance and follow up regularly. Very satisfied.",
-      name: "Imran Shaik",
+      name: "Aircofin Tube India Limited",
       company: ""
     },
     {
       id: 4,
       photo: "/p4.jpeg",
       feedback: "For our 56kWp industrial system, their engineering quality and execution were impressive. We are saving a significant amount on our energy costs every month.",
-      name: "Sandeep Rathi",
-      company: "Airco Fin Tubes Pvt Ltd"
+      name: "Nu-way Heat Transfer Pvt Limited",
+      company: ""
     },
     {
       id: 5,
       photo: "/p5.jpeg",
       feedback: "We opted for zero-down-payment financing and the process was surprisingly easy. Their bank tie-ups and EMI options made solar truly affordable for us.",
-      name: "Lakshmi Nair",
+      name: "Divino Owners Welfare Association",
       company: ""
     },
     {
@@ -300,10 +300,22 @@ const Index = () => {
           </div>
           <div className="text-center mb-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-              <img src="/C1.png" alt="Certificate 1" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
-              <img src="/C2.png" alt="Certificate 2" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
-              <img src="/C3.png" alt="Certificate 3" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
-              <img src="/C4.png" alt="Certificate 4" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
+              <div className="flex flex-col items-center">
+                <img src="/C1.png" alt="Certificate 1" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
+                <p className="text-sm font-semibold text-muted-foreground mt-2 text-center">MSME (Micro, Small, and Medium Enterprises)</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="/C2.png" alt="Certificate 2" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
+                <p className="text-sm font-semibold text-muted-foreground mt-2 text-center">MNRE(Ministry of New and Renewable Energy)</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="/C3.png" alt="Certificate 3" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
+                <p className="text-sm font-semibold text-muted-foreground mt-2 text-center">MSME</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <img src="/C4.png" alt="Certificate 4" className="w-full max-w-64 h-auto rounded-lg border-2 border-gray-400" />
+                <p className="text-sm font-semibold text-muted-foreground mt-2 text-center">tsredco (Telangana State Renewable Energy Development Corporation Ltd)</p>
+              </div>
             </div>
           </div>
 
@@ -365,6 +377,14 @@ const Index = () => {
                     <span className="font-semibold text-muted-foreground">Ideal for homes, villas, and small residential rooftops</span>
                   </li>
                 </ul>
+                <div className="mt-6">
+                  <h4 className="text-lg font-bold mb-4">Our Bank Partners:</h4>
+                  <div className="flex gap-4">
+                    <img src="/BANK 1.png" alt="Bank Partner 1" className="w-24 h-12 object-contain" />
+                    <img src="/BANK 2.png" alt="Bank Partner 2" className="w-24 h-12 object-contain" />
+                    <img src="/BANK 3.png" alt="Bank Partner 3" className="w-24 h-12 object-contain" />
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -400,6 +420,13 @@ const Index = () => {
                     <span className="font-semibold text-muted-foreground">Ideal for businesses, industries, factories & institutions</span>
                   </li>
                 </ul>
+                <div className="mt-6">
+                  <h4 className="text-lg font-bold mb-4">Our Bank Partners:</h4>
+                  <div className="flex gap-4">
+                    <img src="/f1.png" alt="Bank Partner F1" className="w-24 h-12 object-contain" />
+                    <img src="/f2.png" alt="Bank Partner F2" className="w-24 h-12 object-contain" />
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

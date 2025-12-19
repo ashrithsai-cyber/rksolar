@@ -1,8 +1,10 @@
-# Mobile Responsiveness Fixes for Homepage Header
+# About Us Page Layout Optimization
 
 ## Tasks
-- [x] Remove CONTACT US button from mobile header completely
-- [x] Add CONTACT US to mobile menu dropdown
-- [x] Ensure contact functionality is preserved in mobile menu
-- [x] Fix white line on right side (adjust padding if needed)
-- [x] Adjust logo, contact button, and menu button sizes for better mobile fit
+- [ ] Combine Mission & Vision with Team section in side-by-side layout
+- [ ] Merge Bank Partners marquee with Benefits cards section
+- [ ] Make Certifications & Contact section more compact
+- [ ] Improve overall visual flow and storytelling
+
+## Status
+In Progress

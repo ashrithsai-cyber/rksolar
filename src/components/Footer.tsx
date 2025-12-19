@@ -15,12 +15,10 @@ const Footer = () => {
           {/* Company Info - Takes more space */}
           <div className="lg:col-span-5 space-y-6 md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2.5 bg-gradient-to-br from-primary/10 to-yellow-500/10 rounded-xl border border-primary/20 shadow-sm">
-                <Sun className="w-7 h-7 text-primary" />
-              </div>
+              <img src="/logo.png" alt="RK Green Mount Logo" className="w-12 h-12 rounded-xl border border-primary/20 shadow-sm" />
               <div>
                 <h3 className="text-2xl font-black text-slate-900 leading-tight">
-                  RK Solar Green Mount
+                  RK Green Mount
                 </h3>
                 <p className="text-xs text-slate-500 font-semibold">Powering a Sustainable Future</p>
               </div>
@@ -158,7 +156,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-500 font-medium text-center md:text-left">
-            © 2024 RK Solar Green Mount. All rights reserved.
+            © 2024 RK Green Mount. All rights reserved.
           </p>
           <a
             href="https://wa.me/918341126169?text=Hello%2C%20I%20am%20interested%20in%20your%20website%20for%20our%20company."
